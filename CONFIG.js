@@ -6,5 +6,5 @@ const CONFIGDATA = {
   buttonNo: "I don’t agree",
   titleModar: "Thank you!",
   descriptionModar:
-    "Thank you for giving me a chance to be by your side, to protect and take care of you. </br> I know I’m not the most handsome or the most talented, but I have a sincere heart. You mean the world to me. </br> Tonight, I’ll come to pick you up. Dress up nicely! There’s a surprise waiting for you.</br> Love you <3",
+    "Thank you for giving me a chance to be by your side, to protect and take care of you. </br> I know I’m not the most handsome or the most talented, but I have a sincere heart. You mean the world to me. </br> Happy March 8th! 🎉💐 Wishing you a day filled with joy, love, and appreciation. Hope you have a wonderful time celebrating! 😊✨</br> Love you <3",
 };
