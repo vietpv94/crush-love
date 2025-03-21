@@ -1,91 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Gửi lời yêu của đến Kim Anh!" />
-    <meta name="author" content="DONGNGO" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/fonts/themify-icons.css" />
-    <link rel="stylesheet" href="./assets/styles.css" />
-    <link rel="stylesheet" href="./assets/responsive.css" />
-    <title>::.. Thế Giới của Anh ^^ ..::</title>
-  </head>
-  <body>
-    <div class="container">
-      <div id="preloader">
-        <div class="spinner">
-          <div class="dashed-loading"></div>
-        </div>
-      </div>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tẩy Giun Zelcom - Siro Hàn Quốc An Toàn Cho Bé</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <section class="bg-red-500 text-white py-12 text-center">
+        <h1 class="text-3xl font-bold">Tẩy Giun Zelcom - Siro Hàn Quốc An Toàn Cho Bé</h1>
+        <p class="mt-2 text-lg">Loại bỏ giun sán, giúp bé ăn ngon ngủ khỏe! 🍓</p>
+        <button class="mt-4 bg-white text-red-500 px-6 py-3 rounded-lg font-semibold text-lg shadow-md hover:bg-gray-200 transition">
+            Đặt Hàng Ngay 🚀
+        </button>
+    </section>
 
-      <canvas id="pinkboard"></canvas>
+    <!-- Benefits Section -->
+    <section class="py-10 px-6 text-center">
+        <h2 class="text-2xl font-bold text-gray-800">Tại sao chọn Zelcom?</h2>
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <h3 class="font-semibold text-xl">✅ Dạng siro dễ uống</h3>
+                <p>Hương trái cây, bé thích mê</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <h3 class="font-semibold text-xl">✅ Loại bỏ giun tận gốc</h3>
+                <p>Giun móc, giun tóc, giun kim, giun đũa</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <h3 class="font-semibold text-xl">✅ Cả bé & người lớn dùng được</h3>
+                <p>Giải pháp an toàn cho cả gia đình</p>
+            </div>
+        </div>
+    </section>
 
-      <header class="header"></header>
+    <!-- Pricing Section -->
+    <section class="py-10 bg-gray-200 text-center">
+        <h2 class="text-2xl font-bold text-gray-800">🔥 Giá Khuyến Mãi Hôm Nay</h2>
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Bán Lẻ</h3>
+                <p class="text-2xl font-bold text-red-500">109K</p>
+                <p>Freeship toàn quốc</p>
+                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg">Mua Ngay</button>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Combo 2 Hộp</h3>
+                <p class="text-2xl font-bold text-red-500">189K</p>
+                <p>Freeship toàn quốc</p>
+                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg">Mua Ngay</button>
+            </div>
+            <div class="p-6 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">Combo 3 Hộp</h3>
+                <p class="text-2xl font-bold text-red-500">265K</p>
+                <p>Tặng 1 gói lẻ + Freeship</p>
+                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg">Mua Ngay</button>
+            </div>
+        </div>
+    </section>
 
-      <div class="content">
-        <div class="music-control">
-          <audio controls autoplay loop class="music">
-            <source src="./assets/musics/V1.wav" type="audio/wav" />
-          </audio>
-        </div>
-        <div class="answer-question">
-          <button class="btn btn--yes"></button>
-          <button class="btn btn--no"></button>
-        </div>
-      </div>
-      <!-- <footer class="footer">
-            <span class="footer-lisence">© 2021, Designed by
-                <a href="https://fb.com/100055545081553" class="footer-link">AndyNgoJs</a>
-            </span>
-        </footer> -->
-      <!-- Modal -->
-      <div class="modal">
-        <div class="modal__overlay"></div>
-        <div class="modal__body">
-          <div class="message-modal">
-            <div class="heading-name">
-              <h2 class="name"></h2>
+    <!-- Customer Testimonials -->
+    <section class="py-10 text-center">
+        <h2 class="text-2xl font-bold text-gray-800">📢 Khách hàng nói gì?</h2>
+        <div class="mt-6 grid md:grid-cols-2 gap-6">
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <p>"Bé nhà mình dùng xong ăn uống ngon hơn hẳn, rất dễ uống!"</p>
+                <h4 class="font-semibold mt-2">- Chị Lan, Hà Nội</h4>
             </div>
-            <div class="heading-msg">
-              <p class="message"></p>
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <p>"Siro ngọt, bé rất thích, không lo cảnh ép uống thuốc nữa!"</p>
+                <h4 class="font-semibold mt-2">- Anh Hoàng, TP.HCM</h4>
             </div>
-            <div class="footer-modal">
-              <button class="btn btn-close">
-                <i class="btn-icon ti-close"></i>
-                Đóng
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-10 bg-gray-200 text-center">
+        <h2 class="text-2xl font-bold text-gray-800">❓ Câu hỏi thường gặp</h2>
+        <div class="mt-6 text-left mx-auto max-w-2xl">
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <h3 class="font-semibold text-lg">📌 Bé mấy tuổi có thể uống được?</h3>
+                <p>Trẻ từ 2 tuổi trở lên có thể dùng được.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md mt-4">
+                <h3 class="font-semibold text-lg">📌 Bao lâu nên tẩy giun 1 lần?</h3>
+                <p>6 tháng 1 lần để đảm bảo hiệu quả.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Order Button -->
+    <div class="fixed bottom-4 left-0 right-0 text-center">
+        <a href="#" class="bg-red-500 text-white px-6 py-3 rounded-full text-lg font-bold shadow-md">📩 Đặt Hàng Ngay</a>
     </div>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-    ></script>
-    <script src="./CONFIG.js"></script>
-    <script src="./assets/js/setting.js"></script>
-    <script src="./assets/js/RequestAnimationFrame.js"></script>
-    <script src="./assets/js/heartParticle.js"></script>
-    <script src="./assets/js/main.js"></script>
-
-  </body>
+</body>
 </html>
